@@ -5,7 +5,7 @@ This repository contains a simple Tic-Tac-Toe game built using HTML, CSS, and Ja
 
 ## Demo
 
-You can check out the live demo of the game here: [Tic-Tac-Toe Game Demo](https://your-demo-link.com)
+You can check out the live demo of the game here: [Tic-Tac-Toe Game Demo](https://64ce0ce974696f2b984b9c3b--sparkling-bunny-27d3f8.netlify.app/)
 
 ## Features
 
