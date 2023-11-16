@@ -20,7 +20,7 @@ To run the game locally on your machine, follow these steps:
 
 1. Clone the repository to your local machine using the following command:
    ```
-   git clone https://github.com/your-username/your-repo.git
+   https://github.com/Md-abdul/Tic-Tac-Toe-Game.git
    ```
 
 2. Navigate to the project directory:
