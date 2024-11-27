@@ -1,4 +1,4 @@
-
+/* 
 
 body {
   font-family: Arial, sans-serif;
@@ -61,4 +61,128 @@ button {
 
 button:hover {
   background-color: #45a049;
+} */
+
+
+
+/* General Styling */
+body {
+  font-family: 'Poppins', Arial, sans-serif; /* Cleaner, modern font */
+  background-color: #f0f8ff; /* Softer background color */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #333;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* Game Grid */
+#game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 12px;
+}
+
+.grid-cell {
+  border: 2px solid #444;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #444;
+  background-color: #ffffff;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.grid-cell:hover {
+  background-color: #f7f7f7;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Status Section */
+.status {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+}
+
+.current-player {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Game Over Section */
+.game-over {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.game-over .game-over-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+/* Button */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #1e7e34;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #game {
+    grid-template-columns: repeat(3, 80px);
+    gap: 10px;
+  }
+
+  .grid-cell {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  button {
+    font-size: 14px;
+  }
 }
